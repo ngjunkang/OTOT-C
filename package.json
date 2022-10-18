@@ -1,0 +1,43 @@
+{
+  "name": "otot-b1-b2",
+  "version": "1.0.0",
+  "description": "OTOT task B1-B2 demonstrating simple RESTful API implementation",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "test": "jest --detectOpenHandles --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngjunkang/OTOT-B1-B2.git"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "json"
+  ],
+  "author": "Ng Jun Kang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngjunkang/OTOT-B1-B2/issues"
+  },
+  "homepage": "https://github.com/ngjunkang/OTOT-B1-B2#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "jest": "^29.1.2",
+    "mongodb-memory-server": "^8.9.3",
+    "mongoose": "^6.6.1",
+    "supertest": "^6.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prettier": "2.7.1"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
