@@ -5,7 +5,7 @@ const server = require("./server");
 
 const app = server.createExpressServer();
 
-const DB_URI = process.env.DATABASE_URI || "mongodb://localhost/contacts";
+const DB_URI = process.env.DATABASE_URI || "mongodb://localhost/";
 
 const DB_CONNECTION_STRING = !!process.env.DATABASE_URI
   ? "(remote)"
