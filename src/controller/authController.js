@@ -2,6 +2,7 @@ const argon2 = require("argon2");
 const jwt = require("jsonwebtoken");
 
 const User = require("../model/userModel");
+const { ROLES } = require("../config/roles");
 
 const COOKIE_OPTIONS = {
   httpOnly: true,
@@ -81,7 +82,7 @@ const handleRegister = async (req, res) => {
   const newUser = new User({
     username,
     password: hashedPassword,
-    roles: [{ role: "USER", code: 2 }],
+    roles: [{ role: "USER", code: ROLES.USER }],
   });
   newUser.save((err) => {
     if (err) {
